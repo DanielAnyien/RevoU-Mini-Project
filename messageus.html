@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Us</title>
+    <link href="css/messageus.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          id="imgprofile"
+          src="https://static.vecteezy.com/system/resources/previews/000/606/474/original/vector-letter-a-logo-design-concept-template.jpg"
+          alt="Profile"
+        />
+      </div>
+      <div class="hbutton">
+        <a href="index.html">Beranda</a>
+        <a href="profile.html">Tentang Kami</a>
+        <a href="">Portofolio</a>
+        <a href="">Message Us</a>
+      </div>
+    </header>
+    <div class="content">
+      <h1><b>Message Us</b></h1>
+      <div class="container">
+        <div class="col1">
+          <form name="message-form" onsubmit="return outputform()">
+            <div class="form-row">
+              <label for="inama">Nama <span>:</span> </label>
+              <input
+                placehoder="Masukkan Nama"
+                name="inama"
+                id="inama"
+                type="text"
+              />
+            </div>
+            <div class="form-row">
+              <label for="tanggal">Tanggal <span>:</span> </label>
+              <input name="tanggal" id="tanggal" type="date" />
+            </div>
+            <div class="form-row">
+              <label for="jnskelamin">Jenis Kelamin <span>:</span> </label>
+              <input name="jk" id="laki-laki" type="radio" value="laki-laki" />Laki-Laki
+              <input name="jk" id="perempuan" type="radio" value="perempuan" />Perempuan
+            </div>
+            <div class="form-row">
+              <label for="pesan">Pesan <span>:</span></label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                rows="5"
+                placeholder="Masukkan Pesan"
+              ></textarea>
+            </div>
+            <div class="form-row">
+              <input value="Submit" type="submit" />
+            </div>
+          </form>
+        </div>
+        <div class="col2">
+          <p>Nama : <span id="onama"></span></p>
+          <p>Tanggal Lahir : <span id="otgl"></span></p>
+          <p>Jenis Kelamin : <span id="ojk"></span></p>
+          <p>Pesan : <span id="opesan"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function outputform() {
+        var inama = document.forms["message-form"]["inama"].value;
+        var tanggal = document.forms["message-form"]["tanggal"].value;
+        var jk = document.forms["message-form"]["jk"].value;
+        var pesan = document.forms["message-form"]["pesan"].value;
+
+        if (inama == "" || tanggal == "" || jk == "" || pesan == "") {
+          alert("Mohon untuk semuanya diisi");
+          return;
+        }
+
+        document.getElementById("onama").innerText = inama;
+        document.getElementById("otgl").innerText = tanggal;
+        document.getElementById("ojk").innerText = jk;
+        document.getElementById("opesan").innerText = pesan;
+
+        return false;
+      }
+    </script>
+  </body>
+</html>
