@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://titanecho.com/content/uploads/2018/01/website-background-pattern.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    padding: 10px;
+    padding-inline: 2%;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.hbutton {
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+.hbutton a {
+    min-width: 100px;
+    padding-block: 5px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.hbutton a:hover {
+    background-color: gainsboro;
+}
+
+.hbutton a + a {
+    border-left: 1px solid black;
+}
+
+.aboutus {
+    background-image: url("https://th.bing.com/th/id/R.402e0193ebf098527ea4cd04f9bfeb23?rik=Ca9bVKm7W4NZ3g&riu=http%3a%2f%2fwww.pngmagic.com%2fproduct_images%2fred-background-vector-for-website-banner-use.jpg&ehk=eNV8asShFiyL6YBt6gt7HSDqipJ7tok%2bBJGzMVBkRe8%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: fit-content;
+    padding: 10px;
+    padding-inline: 3%;
+}
+
+.aboutus .sub-title {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: wheat;
+}
+
+.aboutus .content {
+    color: wheat;
+    font-size: 15px;
+}
+
+ol {
+    padding-inline: 1.5%;
+}
+
+.vision {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: fit-content;
+    padding: 10px;
+    padding-inline: 3%;
+    background-image: url("https://i0.wp.com/velosportsohio.com/wp-content/uploads/2020/03/simple-pattern-white-seamless-website-background.jpg");
+}
+
+.vision .sub-title {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.vision .content {
+    font-size: 15px;
+}
+
+.mission {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: fit-content;
+    padding: 10px;
+    padding-inline: 3%;
+    background-image: url("https://th.bing.com/th/id/OIP.X2h4C1SWRri0M9-XSPVZPQHaEo?pid=ImgDet&rs=1");
+}
+
+.mission .sub-title {
+    color: gold;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.mission .content {
+    color: gold;
+}
+
+@media only screen and (min-width: 600px) {
+    .imghq1, .imghq2, .imghq3 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .hq img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .hq {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .imghq1, .imghq2, .imghq3 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .hq {
+        display: flex;
+        margin: 30px;
+    }
+    
+    .hq img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
